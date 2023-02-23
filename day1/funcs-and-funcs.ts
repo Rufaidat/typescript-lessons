@@ -7,6 +7,7 @@ export function printToFile(text: string, callback: () => void): void {
 
 export type MutationFunction = (v: number) => number;
 
+//function over loading 
 export function arrayMutate(
   numbers: number[],
   mutate: (v: number) => number
@@ -23,6 +24,7 @@ export type AdderFunction = (v: number) => number;
 export function createAdder(num: number): AdderFunction {
   return (val: number) => num + val;
 }
+
 
 const addOne = createAdder(1);
 console.log(addOne(55));
