@@ -1,27 +1,26 @@
 let userName = "Jack";
-let hasLoggedIn: boolean = true;
+let hasLoggedIn: boolean = true; //boolean type declaration
 
 userName += " Herrington";
 
 console.log(userName);
 
-let myNumber: number = 10;
+let myNumber: number = 10; //number type declaration
 
-let myRegex: RegExp = /foo/;
+let myRegex: RegExp = /foo/; //regexp type declaration
 
-const names: string[] = userName.split(" ");
+const names: string[] = userName.split(" "); //array of strings type declaration  
 
-const myValues: Array<number> = [1, 2, 3];
+const myValues: Array<number> = [1, 2, 3]; //array of numbers type declaration
 
+//implementing Person interface
 interface Person {
   first: string;
   last: string;
 }
 
-const myPerson: {
-  first: string;
-  last: string;
-} = {
+// use the person interface in a function 
+const myPerson: Person= {
   first: "Jack",
   last: "Herrington",
 };
