@@ -1,6 +1,8 @@
 "use strict";
 exports.__esModule = true;
-exports.getName = exports.printFormat = exports.format = exports.addStrings = void 0;
+exports.getName = exports.fetchData = exports.printFormat = exports.format = exports.addStrings = void 0;
+//Function add numbers
+// type numbers
 function addNumbers(a, b) {
     return a + b;
 }
@@ -11,16 +13,23 @@ var addStrings = function (str1, str2) {
     return "".concat(str1, " ").concat(str2);
 };
 exports.addStrings = addStrings;
+//a function that returns a function
+// union type of different data types
 var format = function (title, param) {
     return "".concat(title, " ").concat(param);
 };
 exports.format = format;
+// void function is a function that does not return anything
 var printFormat = function (title, param) {
     console.log((0, exports.format)(title, param));
 };
 exports.printFormat = printFormat;
-// export const fetchData = (url: string): Promise<string> =>
-//   Promise.resolve(`Data from ${url}`);
+//specifying a promise
+var fetchData = function (url) {
+    return Promise.resolve("Data from ".concat(url));
+};
+exports.fetchData = fetchData;
+// taking multiple arguments and coarsing it to an array
 function introduce(salutation) {
     var names = [];
     for (var _i = 1; _i < arguments.length; _i++) {
