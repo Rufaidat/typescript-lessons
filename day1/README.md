@@ -23,7 +23,7 @@ TypeScript is a language extension that adds features to ECMAScript 6. Additiona
 - Abbreviated "arrow" syntax for anonymous functions
 - Optional parameters and default parameters
 
-# why should I use typescript?
+# Why should I use typescript?
 
 JavaScript is a loosely typed language. It can be difficult to understand what types of data are being passed around in JavaScript.
 

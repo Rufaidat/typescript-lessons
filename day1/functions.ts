@@ -20,9 +20,11 @@ export const printFormat = (title: string, param: string | number): void => {
 };
 
 //specifying a promise
-/* export const fetchData = (url: string): Promise<string> =>
+
+export const fetchData = (url: string): Promise<string> =>
+  //@ts-ignore
   Promise.resolve(`Data from ${url}`);
-*/
+
 // taking multiple arguments and coarsing it to an array
 function introduce(salutation: string, ...names: string[]): string {
   return `${salutation} ${names.join(" ")}`;

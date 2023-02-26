@@ -26,6 +26,7 @@ var printFormat = function (title, param) {
 exports.printFormat = printFormat;
 //specifying a promise
 var fetchData = function (url) {
+    //@ts-ignore
     return Promise.resolve("Data from ".concat(url));
 };
 exports.fetchData = fetchData;
